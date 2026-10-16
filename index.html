@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para mi bebé preciosa 🦦✨</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #d296a4, #c46786, #c64277);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Contenedor de elementos flotantes de fondo */
+    #background-floating {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .floating-item {
+      position: absolute;
+      bottom: -60px;
+      user-select: none;
+      animation: floatUp linear forwards;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(0deg) scale(0.8);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.85;
+      }
+      90% {
+        opacity: 0.85;
+      }
+      100% {
+        transform: translateY(-110vh) rotate(360deg) scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    /* Tarjeta principal */
+    .card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  padding: 35px 25px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(225, 112, 140, 0.3);
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  animation: fadeIn 1s ease-out;
+  max-height: 85vh;    /* Evita que se corte en pantallas pequeñas */
+  overflow-y: auto;   /* Agrega scroll si la carta es muy extensa */
+}
+
+    h1 {
+      color: #d81b60;
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+
+    p.subtitle {
+      color: #666;
+      font-size: 1rem;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    .buttons-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background: #ff4081;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(255, 64, 129, 0.3);
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    button:hover {
+      background: #f50057;
+      transform: translateY(-2px);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    .secondary-btn {
+      background: #8e24aa;
+      box-shadow: 0 4px 12px rgba(142, 36, 170, 0.3);
+    }
+
+    .secondary-btn:hover {
+      background: #6a1b9a;
+    }
+
+    .hidden-message {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+      background: #fff0f5;
+      border-radius: 12px;
+      padding: 0 15px;
+      color: #4a154b;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      border-left: 4px solid #ff4081;
+      margin-top: 5px;
+    }
+
+    .hidden-message.show {
+  max-height: 2000px; /* Le da espacio de sobra a textos largos */
+  padding: 15px;
+  opacity: 1;
+  margin-top: 15px;
+  white-space: pre-line; /* Respeta los saltos de línea (Enters) que escribas */
+
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fondo animado constante -->
+  <div id="background-floating"></div>
+
+  <div class="card">
+    <h1>Para la persona más especial 🦦❤️ (no hablo de tea, bueno un pokito si JIJIJI)</h1>
+    <p class="subtitle">Solo quería recordarte lo mucho que significas para mí todos los días.</p>
+
+    <div class="buttons-container">
+      <button onclick="toggleMessage()">Acá veras mi amor convertido en carta 🦦</button>
+      <button class="secondary-btn" onclick="spawnBurst(15)">Si presionas esto me amas mxo ✨</button>
+    </div>
+
+    <!-- Mensaje personalizable -->
+    <div id="secretMessage" class="hidden-message">
+      Se que hay veces que soy complicado de entender o que quizas no sea conciente de algunas cosas que te gustan , y que he cometido muchos errores en el pasado, pero con esto quiero que sepas que te amo demasiado y que realmente eres lo mejor que me a pasado en toda mi vida mamor, estoy tan orgulloso de ti, de como te esfuerzas dia a dia aunque no tengas ganas de hacer nada siempre sacas las fuerzas para hacer todo lo que te propones, y por eso y muchas razones me enamore de ti, de tu personalidad, de como me haces sentir, de tu carisma, de tu paciencia, de tu responsabilidad, de tu amor incondicional que me das todos los dias, de tu hermosura, de tus gustos, de tu forma de ser, de como ves el mundo, de tu gusto por los animalitos, porque eres iwal de tea que yo, y podria seguir asi por mucho tiempo mas, escribiendote y escribiendote todo lo que siento pero son cosas que ya sabes JIJIJI, solo quiero decir que gracias por todo lo que haces por mi siempre, como siempre te digo eres el amor de mi vida y quiero que siempre tengas en cuenta eso para todo lo que te propongas, como ya te dije en esta pequeña carta eres el amor de mi vida y siempre sera asi mi cosheshu hermosa. 
+      
+      TE AMO 100000 MILLONES COSITA HERMOSA 🦦
+    </div>
+  </div>
+
+  <script>
+    const container = document.getElementById('background-floating');
+    const items = ['🦦', '✨', '🪷', '🌸', '💕', '✨', '🦦'];
+
+    // Función para crear un elemento flotante
+    function createFloatingElement(isBurst = false) {
+      const el = document.createElement('div');
+      el.classList.add('floating-item');
+      el.innerText = items[Math.floor(Math.random() * items.length)];
+
+      // Posición horizontal aleatoria
+      el.style.left = Math.random() * 95 + 'vw';
+
+      // Tamaño aleatorio
+      const size = Math.random() * 20 + 20; // Entre 20px y 40px
+      el.style.fontSize = size + 'px';
+
+      // Duración aleatoria para que no suban todos al mismo ritmo
+      const duration = isBurst ? (Math.random() * 2 + 2) : (Math.random() * 4 + 4); 
+      el.style.animationDuration = duration + 's';
+
+      container.appendChild(el);
+
+      // Eliminar al terminar la animación
+      setTimeout(() => {
+        el.remove();
+      }, duration * 1000);
+    }
+
+    // Generar elementos flotando de fondo continuamente
+    setInterval(() => {
+      createFloatingElement();
+    }, 450);
+
+    // Ráfaga extra al presionar el botón interactivo
+    function spawnBurst(count) {
+      for (let i = 0; i < count; i++) {
+        setTimeout(() => {
+          createFloatingElement(true);
+        }, i * 70);
+      }
+    }
+
+    // Mostrar u ocultar la cartita
+    function toggleMessage() {
+      const msg = document.getElementById('secretMessage');
+      msg.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

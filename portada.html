@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SORPRESA JIJIJI 🌸</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #d296a4, #c46786, #c64277);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 25px;
+      padding: 40px 30px;
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+      animation: popIn 0.8s ease-out;
+    }
+
+    .icon {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+      display: inline-block;
+      animation: pulse 1.5s infinite;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 30px;
+      line-height: 1.4;
+    }
+
+    /* Botón enlace con animación interactiva */
+    .btn-link {
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(45deg, #ff4081, #e91e63);
+      color: white;
+      padding: 16px 32px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn-link:hover {
+      transform: scale(1.08) translateY(-3px);
+      box-shadow: 0 10px 25px rgba(233, 30, 99, 0.6);
+      background: linear-gradient(45deg, #e91e63, #c2185b);
+    }
+
+    .btn-link:active {
+      transform: scale(0.98);
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.15);
+      }
+    }
+
+    @keyframes popIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="icon">🌸</div>
+    <h1>SI MAMOR ESTO ES PARA TÚ, PRESIONA ABAJITOOO</h1>
+    <p>Te hago esto para demostrar mi amor de la forma que mejor se me da 🫶</p>
+    
+    <!-- Aquí está el enlace con el botón interactivo -->
+    <a href="index.html" class="btn-link">Presiona aquí JIJIJI 🌸✨</a>
+  </div>
+
+</body>
+</html>
